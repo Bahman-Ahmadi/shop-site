@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="stylesheet" href="dist/assets/bootstrap-icons.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="dist/css/product.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="dist/css/index.css" type="text/css" media="all" />
+
+	<title>مشخصات محصول</title>
+</head>
+<body>
+	<div class="account" style="width: 100%;">
+		<div class="cart">
+			<i class="bi bi-cart"></i>
+			<!-- number that shows on the cart -->
+			<div class="cart-count">
+				6
+			</div>
+		</div>
+		<!-- User profile picture -->
+		<img src="dist/assets/profile.jpg" alt="[PF]" class="profile" onclick="menu();" />
+	</div>
+
+	<div class="menu" id="menu" hidden>
+		<br />
+		<div class="inline">
+			<i class="bi bi-list" onclick="menu();"></i>
+			<div class="menu-profile inline">
+				<span class="menu-profile-name">بهمن</span>
+				<img class="menu-profile-image" src="dist/assets/profile.jpg" alt="[MPI]" />
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="center">
+			<div class="menu-item">
+				داشبورد
+			</div>
+			<div class="menu-item">
+				تنظیمات
+			</div>
+			<div class="menu-item">
+				خروج از سیستم
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="menu-item inline">
+			<div class="left incart">
+				6
+			</div>
+			<div class="right">
+				<span class="menu-item-name">سبد خرید</span>
+				<i class="bi bi-cart2"></i>
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="center">
+			<div class="menu-item">
+				کاوش کنید
+			</div>
+			<div class="menu-item">
+				آموزش ها
+			</div>
+			<div class="menu-item">
+				انجمن
+			</div>
+			<div class="menu-item">
+				بارگذاری
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="header-icons">
+		<a href="index.html" class="bi bi-reply"></a>
+		<div class="like" onclick="LikeToggle();">
+			<i class="bi bi-heart-fill"></i>
+		</div>
+	</div>
+	<br />
+
+	<div class="product-photo-box">
+		<img src="dist/assets/1.png" alt="[PP]" class="product-photo-full">
+	</div>
+
+	<div class="other">
+		<div class="product-info">
+			<div class="product-head">
+				<div style="margin-right: auto; float: left;">
+					<i class="bi bi-star-fill"></i>
+					<span class="stars">4.2</span>
+					<span class="count-stars">(103)</span>
+				</div>
+
+				<div style="margin-left: auto; float: right;">
+					<b>تی‌شرت</b> <i class="bi bi-card-text"></i>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="product-description">
+			لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم
+		</div>
+		<br />
+		<div class="product-size">
+			<span><b>اندازهٔ مورد</b></span><br />
+			<div class="sizes">
+				<button class="size size-selected">XS</button>
+				<button class="size">SM</button>
+				<button class="size">MD</button>
+				<button class="size">LG</button>
+			</div>
+		</div>
+		<br />
+		<div class="product-color">
+			<span><b>رنگ مورد</b></span>
+			<div class="colors">
+				<button class="color red color-selected"><i class="bi bi-check2"></i></button>
+				<button class="color blue"></button>
+				<button class="color grey"></button>
+				<button class="color green"></button>
+				<button class="color brown"></button>
+				<button class="color violet"></button>
+			</div>
+		</div>
+		<br />
+		<div class="finally-settings">
+			<div class="inline">
+				<div style="margin-right: auto; float: left;">
+					<button class="minus" onclick="minus('viewer');">–</button>
+					<span id="viewer">1</span>
+					<button class="plus" onclick="plus('viewer');">+</button>
+					<span class="session-title">تعداد</span>
+				</div>
+				<div style="margin-left: auto; float: right;">
+					<span class="session-title">قیمت‌نهایی</span>
+					<span class="price">459,000 تومان</span>
+				</div>
+			</div>
+			<br />
+			<button class="submit" onclick="console.log(sendForm());"><i class="bi bi-cart2"></i> افزودن به سبدخرید</button>
+		</div>
+	</div>
+	<br />
+
+	<div class="reviews">
+		<div class="titr">
+			<div class="left">
+				<button class="add-review" onclick="showAlert();">
+					<i class="bi bi-plus"></i>
+				</button>
+			</div>
+			<div class="right">
+				<span class="reviews-title">نظرات کاربران</span>
+			</div>
+		</div>
+		<div class="item message">
+			<span class="from">
+				علی علوی
+			</span>
+			<span class="date">۲ آذر ۱۴۰۰</span>
+			<span class="text">
+				لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم
+			</span>
+		</div>
+		<div class="item message">
+			<span class="from">
+				علی علوی
+			</span>
+			<span class="date">۲ آذر ۱۴۰۰</span>
+			<span class="text">
+				لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم
+			</span>
+		</div>
+		<div class="item message">
+			<span class="from">
+				علی علوی
+			</span>
+			<span class="date">۲ آذر ۱۴۰۰</span>
+			<span class="text">
+				لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم
+			</span>
+		</div>
+		<div class="item message">
+			<span class="from">
+				علی علوی
+			</span>
+			<span class="date">۲ آذر ۱۴۰۰</span>
+			<span class="text">
+				لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم
+			</span>
+		</div>
+		<div class="item message">
+			<span class="from">
+				علی علوی
+			</span>
+			<span class="date">۲ آذر ۱۴۰۰</span>
+			<span class="text">
+				لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم
+			</span>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="social-medias">
+			<i class="bi bi-telegram social-media"></i>
+			<i class="bi bi-twitter social-media"></i>
+			<i class="bi bi-instagram social-media"></i>
+		</div>
+		<span class="copyright">تمامی حقوق برای <b>این سایت</b> محفوظ است</span>
+	</div>
+	<br />
+	<br><br>
+	<br><br>
+
+	<nav class="bottom-toolbar">
+		<div class="icons">
+			<div class="icon person">
+				<i class="bi bi-person"></i> <br />
+				پروفایل
+			</div>
+			<div class="icon shop active-icon">
+				<i class="bi bi-shop"></i> <br />
+				فروشگاه
+			</div>
+			<div class="icon heart">
+				<i class="bi bi-heart"></i> <br />
+				علاقه‌مندی
+			</div>
+			<div class="icon home">
+				<i class="bi bi-house"></i> <br />
+				خانه
+			</div>
+		</div>
+	</nav>
+
+	<div id="alert" class="item alert">
+		<h3 id="atitle"><i class="bi bi-x-circle-fill" onclick="hiddenAlert();"></i> ارسال نظر</h3>
+
+		<input type="text" id="name" placeholder="اسم شما چیست؟" />
+		<textarea id="msg" rows="4" cols="40" placeholder="متن پیام..."></textarea>
+		<button class="submit" onclick="hiddenAlert();">ارسال نظر</button>
+	</div>
+
+	<script src="dist/js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/product.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="stylesheet" href="dist/assets/bootstrap-icons.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="dist/css/index.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="dist/css/login.css" type="text/css" media="all" />
+
+	<title>ثبت‌نام/ورود</title>
+</head>
+<body>
+	<div class="account">
+		<div class="cart">
+			<i class="bi bi-cart"></i>
+			<!-- number that shows on the cart -->
+			<div class="cart-count">
+				6
+			</div>
+		</div>
+		<!-- User profile picture -->
+		<img src="dist/assets/profile.jpg" alt="[PF]" class="profile" onclick="menu();" />
+	</div>
+	<br />
+
+	<div class="menu" id="menu" hidden>
+		<br />
+		<div class="inline">
+			<i class="bi bi-list" onclick="menu();"></i>
+			<div class="menu-profile inline">
+				<span class="menu-profile-name">بهمن</span>
+				<img class="menu-profile-image" src="dist/assets/profile.jpg" alt="[MPI]" />
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="center">
+			<div class="menu-item">
+				داشبورد
+			</div>
+			<div class="menu-item">
+				تنظیمات
+			</div>
+			<div class="menu-item">
+				خروج از سیستم
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="menu-item inline">
+			<div class="left incart">
+				6
+			</div>
+			<div class="right">
+				<span class="menu-item-name">سبد خرید</span>
+				<i class="bi bi-cart2"></i>
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="center">
+			<div class="menu-item">
+				کاوش کنید
+			</div>
+			<div class="menu-item">
+				آموزش ها
+			</div>
+			<div class="menu-item">
+				انجمن
+			</div>
+			<div class="menu-item">
+				بارگذاری
+			</div>
+
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<form class="item login" method="post">
+		<div class="box">
+			<i class="bi bi-person"></i>
+			<input type="email" name="email" class="input" placeholder="ایمیل" />
+		</div>
+
+		<div class="box">
+			<i class="bi bi-lock"></i>
+			<input type="password" name="password" id="password" class="input" placeholder="رمزعبور" />
+			<i class="bi bi-eye-slash" id="show" onclick="showPass();"></i>
+		</div>
+
+		<span class="forgot" onclick="ForgotAlert();">رمزعبور را فراموش کردید؟</span><br /> <br />
+
+		<button class="login-btn" type="submit">ورود</button>
+	</form>
+
+	<br /><br />
+	<div class="agree">
+		با ثبت‌نام در سایت یا ورود به حساب‌کاربری خود،<br />
+		شما با <a class="go" href="rules.html">قوانین و مقررات</a> و خط مشی ما موافقت می‌کنید.
+	</div>
+	<br />
+	<div class="register">
+		حساب‌کاربری ندارید؟ <span class="go" onclick="RegisterAlert()">ثبت‌نام</span> کنید.
+	</div>
+
+	<br />
+	<br />
+	<div class="footer">
+		<div class="social-medias">
+			<i class="bi bi-telegram social-media"></i>
+			<i class="bi bi-twitter social-media"></i>
+			<i class="bi bi-instagram social-media"></i>
+		</div>
+		<span class="copyright">تمامی حقوق برای <b>این سایت</b> محفوظ است</span>
+	</div>
+	<br><br><br>
+
+	<nav class="bottom-toolbar">
+		<div class="icons">
+			<div class="icon person">
+				<i class="bi bi-person"></i> <br />
+				پروفایل
+			</div>
+			<div class="icon shop">
+				<i class="bi bi-shop"></i> <br />
+				فروشگاه
+			</div>
+			<div class="icon heart">
+				<i class="bi bi-heart"></i> <br />
+				علاقه‌مندی
+			</div>
+			<div class="icon home active-icon">
+				<i class="bi bi-house"></i> <br />
+				خانه
+			</div>
+		</div>
+	</nav>
+
+	<div id="alert" class="item alert" hidden></div>
+
+	<script src="dist/js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/login.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

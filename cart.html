@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="stylesheet" href="dist/assets/bootstrap-icons.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="dist/css/index.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="dist/css/login.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="dist/css/cart.css" type="text/css" media="all" />
+
+	<title>سبد خرید</title>
+</head>
+<body>
+	<div class="account">
+		<div class="cart">
+			<i class="bi bi-cart"></i>
+			<!-- number that shows on the cart -->
+			<div class="cart-count">
+				6
+			</div>
+		</div>
+		<!-- User profile picture -->
+		<img src="dist/assets/profile.jpg" alt="[PF]" class="profile" onclick="menu();" />
+	</div>
+	<div class="menu" id="menu" hidden>
+		<br />
+		<div class="inline">
+			<i class="bi bi-list" onclick="menu();"></i>
+			<div class="menu-profile inline">
+				<span class="menu-profile-name">بهمن</span>
+				<img class="menu-profile-image" src="dist/assets/profile.jpg" alt="[MPI]" />
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="center">
+			<div class="menu-item">
+				داشبورد
+			</div>
+			<div class="menu-item">
+				تنظیمات
+			</div>
+			<div class="menu-item">
+				خروج از سیستم
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="menu-item inline">
+			<div class="left incart">
+				6
+			</div>
+			<div class="right">
+				<span class="menu-item-name">سبد خرید</span>
+				<i class="bi bi-cart2"></i>
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="center">
+			<div class="menu-item">
+				کاوش کنید
+			</div>
+			<div class="menu-item">
+				آموزش ها
+			</div>
+			<div class="menu-item">
+				انجمن
+			</div>
+			<div class="menu-item">
+				بارگذاری
+			</div>
+		</div>
+	</div>
+
+	<div class="head">
+		<i class="bi bi-search" onclick="SearchAlert();"></i>
+		<b>سبدخرید</b>
+		<a href="panel.html" class="bi bi-reply"></a>
+	</div>
+	<br />
+
+	<div class="collection">
+		<div class="item">
+			<div class="col">
+				<div class="details">
+					<span class="product-name">تی‌شرت</span><br />
+					<div class="inline cart-inline">
+						<div class="inline cart-inline">
+							<div class="count inline">
+								<button class="plus" onclick="plus('viewer1');">+</button>
+								<b id="viewer1">3</b>
+								<button class="minus" onclick="minus('viewer1');">-</button>
+							</div>
+							<span class="detail-title">تعداد</span>
+						</div>
+						<div class="inline cart-inline">
+							<div class="size">
+								MD
+							</div>
+							<span class="detail-title">اندازه</span>
+						</div>
+						<div class="inline cart-inline">
+							<div class="color" style="background: darkorange;"></div>
+							<span class="detail-title">رنگ</span>
+						</div>
+					</div>
+					<span class="product-price">$32.59</span><br />
+				</div>
+			</div>
+			<div class="col">
+				<img src="dist/assets/1.png" alt="[Pp]" class="product-image">
+			</div>
+		</div>
+		<div class="item">
+			<div class="col">
+				<div class="details">
+					<span class="product-name">تی‌شرت</span><br />
+					<div class="inline cart-inline">
+						<div class="inline cart-inline">
+							<div class="count inline">
+								<button class="plus" onclick="plus('viewer2');">+</button>
+								<b id="viewer2">3</b>
+								<button class="minus" onclick="minus('viewer2');">-</button>
+							</div>
+							<span class="detail-title">تعداد</span>
+						</div>
+						<div class="inline cart-inline">
+							<div class="size">
+								MD
+							</div>
+							<span class="detail-title">اندازه</span>
+						</div>
+						<div class="inline cart-inline">
+							<div class="color" style="background: darkblue;"></div>
+							<span class="detail-title">رنگ</span>
+						</div>
+					</div>
+					<span class="product-price">$32.59</span><br />
+				</div>
+			</div>
+			<div class="col">
+				<img src="dist/assets/2.png" alt="[Pp]" class="product-image">
+			</div>
+		</div>
+		<div class="item">
+			<div class="col">
+				<div class="details">
+					<span class="product-name">تی‌شرت</span><br />
+					<div class="inline cart-inline">
+						<div class="inline cart-inline">
+							<div class="count inline">
+								<button class="plus" onclick="plus('viewer3');">+</button>
+								<b id="viewer3">3</b>
+								<button class="minus" onclick="minus('viewer3');">-</button>
+							</div>
+							<span class="detail-title">تعداد</span>
+						</div>
+						<div class="inline cart-inline">
+							<div class="size">
+								MD
+							</div>
+							<span class="detail-title">اندازه</span>
+						</div>
+						<div class="inline cart-inline">
+							<div class="color" style="background: darkorange;"></div>
+							<span class="detail-title">رنگ</span>
+						</div>
+					</div>
+					<span class="product-price">$32.59</span><br />
+				</div>
+			</div>
+			<div class="col">
+				<img src="dist/assets/1.png" alt="[Pp]" class="product-image">
+			</div>
+		</div>
+		<div class="item">
+			<div class="col">
+				<div class="details">
+					<span class="product-name">تی‌شرت</span><br />
+					<div class="inline cart-inline">
+						<div class="inline cart-inline">
+							<div class="count inline">
+								<button class="plus" onclick="plus('viewer4');">+</button>
+								<b id="viewer4">3</b>
+								<button class="minus" onclick="minus('viewer4');">-</button>
+							</div>
+							<span class="detail-title">تعداد</span>
+						</div>
+						<div class="inline cart-inline">
+							<div class="size">
+								MD
+							</div>
+							<span class="detail-title">اندازه</span>
+						</div>
+						<div class="inline cart-inline">
+							<div class="color" style="background: darkblue;"></div>
+							<span class="detail-title">رنگ</span>
+						</div>
+					</div>
+					<span class="product-price">$32.59</span><br />
+				</div>
+			</div>
+			<div class="col">
+				<img src="dist/assets/2.png" alt="[Pp]" class="product-image">
+			</div>
+		</div>
+
+		<button class="go" onclick="GoAlert();">نهایی کردن سفارش <i class="bi bi-cart2"></i></button>
+	</div>
+
+	<br />
+	<br />
+	<div class="footer">
+		<div class="social-medias">
+			<i class="bi bi-telegram social-media"></i>
+			<i class="bi bi-twitter social-media"></i>
+			<i class="bi bi-instagram social-media"></i>
+		</div>
+		<span class="copyright">تمامی حقوق برای <b>این سایت</b> محفوظ است</span>
+	</div>
+	<br><br><br>
+
+	<nav class="bottom-toolbar">
+		<div class="icons">
+			<div class="icon person active-icon">
+				<i class="bi bi-person"></i> <br />
+				پروفایل
+			</div>
+			<div class="icon shop">
+				<i class="bi bi-shop"></i> <br />
+				فروشگاه
+			</div>
+			<div class="icon heart">
+				<i class="bi bi-heart"></i> <br />
+				علاقه‌مندی
+			</div>
+			<div class="icon home">
+				<i class="bi bi-house"></i> <br />
+				خانه
+			</div>
+		</div>
+	</nav>
+
+	<script src="dist/js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/product.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		function SearchAlert() {
+			document.body.innerHTML += `<div id="alert" class="item alert"></div>`;
+			let Alert = document.getElementById("alert");
+			Alert.innerHTML = `
+			<h3 id="atitle" dir="rtl">
+			<i class="bi bi-x-circle-fill" onclick="hiddenAlert();"></i>
+			جستجو...
+			</h3>
+			<input type="search" class="alert-field" placeholder="کلیدواژه" /><br/>
+
+			<button class="login-btn" onclick="hiddenAlert();">جستجو</button>
+			`;
+		}
+		function GoAlert() {
+			document.body.innerHTML += `<div id="alert" class="item alert"></div>`;
+			let Alert = document.getElementById("alert");
+			Alert.innerHTML = `
+			<h3 id="atitle" dir="rtl">
+			<i class="bi bi-x-circle-fill" onclick="hiddenAlert();"></i>
+			فرم را پر کنید
+			</h3>
+			<input type="text" class="alert-field" placeholder="آدرس مقصد" /><br/>
+
+
+			<div style="display: flex">
+			<button class="open-dropdown alert-field" id="opendropdown1" onclick="dropdown('dropdown1');">انتخاب کنید</button>
+			<button class="open-dropdown alert-field left" id="opendropdown2" onclick="dropdown('dropdown2');">انتخاب کنید</button>
+			</div>
+
+			<div style="display: flex">
+			<div class="dropdown" id="dropdown1" style="display: none">
+			<button class="dropdown-option dropdown-option-selected" id="opt1" onclick="selectOption(this);">گزینه</button>
+			<button class="dropdown-option" id="opt2" onclick="selectOption(this);">گزینه</button>
+			<button class="dropdown-option" id="opt3" onclick="selectOption(this);">گزینه</button>
+			</div>
+
+			<div class="dropdown left" id="dropdown2" style="display: none">
+			<button class="dropdown-option dropdown-option-selected" id="opt4" onclick="selectOption(this);">گزینه</button>
+			<button class="dropdown-option" id="opt5" onclick="selectOption(this);">گزینه</button>
+			<button class="dropdown-option" id="opt6" onclick="selectOption(this);">گزینه</button>
+			</div>
+			</div>
+
+			قیمت کل: <b>120,000</b></br>
+			تخفیف: <b>%12</b>
+
+			<button class="login-btn" onclick="hiddenAlert();">بزن بریم!</button>
+			`;
+		}
+		function dropdown(id) {
+			let element = document.getElementById(id);
+			if (element.style.display == "block") {
+				element.style = "display: none;";
+			} else {
+				element.style = "display: block;"
+			}
+		}
+		function selectOption(element) {
+			if (element.parentNode.id == "dropdown1") {
+				document.getElementById("dropdown1").innerHTML = `
+				<button class="dropdown-option" id="opt1" onclick="selectOption(this);">گزینه</button>
+				<button class="dropdown-option" id="opt2" onclick="selectOption(this);">گزینه</button>
+				<button class="dropdown-option" id="opt3" onclick="selectOption(this);">گزینه</button>
+				`;
+			} else {
+				document.getElementById("dropdown2").innerHTML = `
+				<button class="dropdown-option" id="opt4" onclick="selectOption(this);">گزینه</button>
+				<button class="dropdown-option" id="opt5" onclick="selectOption(this);">گزینه</button>
+				<button class="dropdown-option" id="opt6" onclick="selectOption(this);">گزینه</button>
+				`;
+			}
+			var This = document.getElementById(element.id);
+			This.className = "dropdown-option dropdown-option-selected";
+			dropdown(This.parentNode.id);
+			document.getElementById(`open${This.parentNode.id}`).innerHTML = This.innerHTML;
+		}
+		function hiddenAlert() {
+			let Alert = document.getElementById("alert");
+			document.body.removeChild(Alert);
+		}
+	</script>
+
+</body>
+</html>

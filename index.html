@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="stylesheet" href="dist/assets/bootstrap-icons.css">
+	<link rel="stylesheet" href="dist/css/index.css" type="text/css" media="all" />
+
+	<title>صفحه اصلی فروشگاه</title>
+</head>
+<body>
+	<div class="account">
+		<div class="cart">
+			<i class="bi bi-cart"></i>
+			<!-- number that shows on the cart -->
+			<div class="cart-count">
+				6
+			</div>
+		</div>
+		<!-- User profile picture -->
+		<img src="dist/assets/profile.jpg" alt="[PF]" class="profile" onclick="menu();" />
+	</div>
+	<br />
+
+	<div class="menu" id="menu" hidden>
+		<br />
+		<div class="inline">
+			<i class="bi bi-list" onclick="menu();"></i>
+			<div class="menu-profile inline">
+				<span class="menu-profile-name">بهمن</span>
+				<img class="menu-profile-image" src="dist/assets/profile.jpg" alt="[MPI]" />
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="center">
+			<div class="menu-item">
+				داشبورد
+			</div>
+			<div class="menu-item">
+				تنظیمات
+			</div>
+			<div class="menu-item">
+				خروج از سیستم
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="menu-item inline">
+			<div class="left incart">
+				6
+			</div>
+			<div class="right">
+				<span class="menu-item-name">سبد خرید</span>
+				<i class="bi bi-cart2"></i>
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="center">
+			<div class="menu-item">
+				کاوش کنید
+			</div>
+			<div class="menu-item">
+				آموزش ها
+			</div>
+			<div class="menu-item">
+				انجمن
+			</div>
+			<div class="menu-item">
+				بارگذاری
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="head">
+		<!-- about this site -->
+		<span class="name">فروشگاه مُد</span>
+		<span class="bio">مد های محبوب مردم را از خانه دریافت کنید</span>
+	</div>
+	<br />
+	<div class="search">
+		<input type="text" class="search-box" placeholder="لباس مورد نیاز خود را جستجو کنید...">
+		<div class="search-icon">
+			<i class="bi bi-search search-ic"></i>
+		</div>
+	</div>
+	<br />
+
+	<div class="column">
+		<span class="col-name">دسته‌بندی‌ها</span>
+		<a href="#" class="see-all">دیدن همه</a>
+	</div>
+	<div class="categories">
+		<div class="cats">
+			<div class="item cat">
+				<img src="dist/assets/t-shirt.png" alt="[CT]" class="cat-logo" /><br />
+				<div class="cat-name">
+					تی‌شرت
+				</div>
+			</div>
+			<div class="item cat">
+				<img src="dist/assets/t-shirt.png" alt="[I]" class="cat-logo" /><br />
+				<div class="cat-name">
+					تی‌شرت
+				</div>
+			</div>
+			<div class="item cat">
+				<img src="dist/assets/t-shirt.png" alt="[I]" class="cat-logo" /><br />
+				<div class="cat-name">
+					تی‌شرت
+				</div>
+			</div>
+			<div class="item cat">
+				<img src="dist/assets/t-shirt.png" alt="[I]" class="cat-logo" /><br />
+				<div class="cat-name">
+					تی‌شرت
+				</div>
+			</div>
+		</div>
+	</div>
+	<br />
+
+	<div class="column">
+		<span class="col-name">محصولات</span>
+		<a href="#" class="see-all">دیدن همه</a>
+	</div>
+	<br />
+	<div class="tab-box item">
+		<h3 class="tab-title">دسته‌بندی‌ها</h3>
+		<div class="tabs">
+			<div class="tab" id="tab1" onclick="changeTab(this.id);">
+				لوکس
+			</div>
+			<div class="tab" id="tab2" onclick="changeTab(this.id);">
+				بچگانه
+			</div>
+			<div class="tab" id="tab3" onclick="changeTab(this.id);">
+				زنانه
+			</div>
+			<div class="tab active-tab-text" id="tab4" onclick="changeTab(this.id);">
+				مردانه
+				<div class="active-tab"></div>
+			</div>
+		</div>
+	</div>
+	<div class="products">
+		<div class="item product">
+			<div class="inner-product">
+				<img src="dist/assets/1.png" alt="[PD]" class="product-photo">
+				<div class="product-like">
+					<i class="bi bi-heart" onclick="likeToggle(this);"></i>
+				</div>
+				<div class="product-name">
+					تی‌شرت نارنجی
+				</div>
+				<div class="product-price">
+					تومان۴۵۹,۰۰۰ <s>۵۰۰,۰۰۰ت</s>
+				</div>
+				<div class="product-count">
+					<span class="session-title">تعداد</span>
+					<button class="minus" id="minus" onclick="minus('viewer1');">–</button>
+					<span id="viewer1">1</span>
+					<button class="plus" id="plus" onclick="plus('viewer1');">+</button>
+				</div>
+				<button class="add-to-cart center"><i class="bi bi-cart-plus"></i> افزودن به سبدخرید</button>
+			</div>
+		</div>
+		<div class="item product">
+			<div class="inner-product">
+				<img src="dist/assets/2.png" alt="[PD]" class="product-photo">
+				<div class="product-like">
+					<i class="bi bi-heart" onclick="likeToggle(this);"></i>
+				</div>
+				<div class="product-name">
+					تی‌شرت تیره
+				</div>
+				<div class="product-price">
+					تومان۴۵۹,۰۰۰ <s>۵۰۰,۰۰۰ت</s>
+				</div>
+				<div class="product-count">
+					<span class="session-title">تعداد</span>
+					<button class="minus" id="minus" onclick="minus('viewer2');">–</button>
+					<span id="viewer2">1</span>
+					<button class="plus" id="plus" onclick="plus('viewer2');">+</button>
+				</div>
+				<button class="add-to-cart center"><i class="bi bi-cart-plus"></i> افزودن به سبدخرید</button>
+			</div>
+		</div>
+		<div class="item product">
+			<div class="inner-product">
+				<img src="dist/assets/1.png" alt="[PD]" class="product-photo">
+				<div class="product-like">
+					<i class="bi bi-heart" onclick="likeToggle(this);"></i>
+				</div>
+				<div class="product-name">
+					تی‌شرت نارنجی
+				</div>
+				<div class="product-price">
+					تومان۴۵۹,۰۰۰ <s>۵۰۰,۰۰۰ت</s>
+				</div>
+				<div class="product-count">
+					<span class="session-title">تعداد</span>
+					<button class="minus" id="minus" onclick="minus('viewer3');">–</button>
+					<span id="viewer3">1</span>
+					<button class="plus" id="plus" onclick="plus('viewer3');">+</button>
+				</div>
+				<button class="add-to-cart center"><i class="bi bi-cart-plus"></i> افزودن به سبدخرید</button>
+			</div>
+		</div>
+		<div class="item product">
+			<div class="inner-product">
+				<img src="dist/assets/2.png" alt="[PD]" class="product-photo">
+				<div class="product-like product-like-active">
+					<i class="bi bi-heart-fill" onclick="likeToggle(this);"></i>
+				</div>
+				<div class="product-name">
+					تی‌شرت تیره
+				</div>
+				<div class="product-price">
+					تومان۴۵۹,۰۰۰ <s>۵۰۰,۰۰۰ت</s>
+				</div>
+				<div class="product-count">
+					<span class="session-title">تعداد</span>
+					<button class="minus" id="minus" onclick="minus('viewer4');">–</button>
+					<span id="viewer4">1</span>
+					<button class="plus" id="plus" onclick="plus('viewer4');">+</button>
+				</div>
+				<button class="add-to-cart center"><i class="bi bi-cart-plus"></i> افزودن به سبدخرید</button>
+			</div>
+		</div>
+	</div>
+	<br />
+	<br />
+	<br />
+
+	<div class="footer">
+		<div class="social-medias">
+			<i class="bi bi-telegram social-media"></i>
+			<i class="bi bi-twitter social-media"></i>
+			<i class="bi bi-instagram social-media"></i>
+		</div>
+		<span class="copyright">تمامی حقوق برای <b>این سایت</b> محفوظ است</span>
+	</div>
+	<br />
+	<br />
+
+	<nav class="bottom-toolbar">
+		<div class="icons">
+			<div class="icon person">
+				<i class="bi bi-person"></i> <br />
+				پروفایل
+			</div>
+			<div class="icon shop">
+				<i class="bi bi-shop"></i> <br />
+				فروشگاه
+			</div>
+			<div class="icon heart">
+				<i class="bi bi-heart"></i> <br />
+				علاقه‌مندی
+			</div>
+			<div class="icon home active-icon">
+				<i class="bi bi-house"></i> <br />
+				خانه
+			</div>
+		</div>
+	</nav>
+
+
+	<script src="dist/js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/product.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

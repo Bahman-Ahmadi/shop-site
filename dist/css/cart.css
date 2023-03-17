@@ -1,0 +1,134 @@
+/*---- TITLE BAR ----*/
+.head {
+	text-align: center;
+}
+.bi-search {
+	float: right;
+}
+.bi-reply {
+	float: left;
+}
+
+/*---- SKELETON ----*/
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.col:nth-child(2n-1) {
+	width: 70%;
+	margin-top: 10px;
+}
+.col:nth-child(2n) {
+	width: 30%;
+}
+.details {
+	float: right;
+}
+.product-name {
+	font-weight: bold;
+	font-size: 18px;
+	float: right;
+}
+.product-image {
+	width: 90px;
+	height: 120px;
+	float: right;
+}
+.product-price {
+	font-weight: bold;
+	float: right;
+}
+
+/*---- DETAILS ----*/
+.cart-inline {
+	margin: 3px;
+}
+.detail-title {
+	color: #727272aa;
+}
+.color {
+	border: none;
+	width: 25px;
+	height: 25px;
+	background: #F5F5F5;
+	border-radius: 50px;
+	margin-top: 1px;
+	margin-right: 3px;
+	margin-bottom: 1px;
+}
+.size,.count {
+	font-weight: bold;
+	font-size: 14px;
+	margin: 3px;
+}
+.plus,.minus {
+	width: 18px;
+	height: 18px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 1.5px;
+	margin-right: 1.5px;
+}
+.go {
+	border: none;
+	color: #F5F5F5;
+	border-radius: 50px;
+	font-family: "vazir";
+	background: var(--green);
+	margin: 20px auto 0 auto;
+	box-shadow: 0 0 8px #e0e0e0;
+	padding: 10px 80px 10px 80px;
+	left: 0;right: 0;position: absolute;
+	width: fit-content;height: fit-content;
+}
+
+.footer {
+	margin-top: 30px;
+}
+
+
+.alert {
+	margin: auto;
+	position: fixed;
+	direction: rtl;
+	width: 50%;
+	display: block;
+}
+.dropdown {
+	padding: 3px;
+	background: #fff;
+	border-radius: 8px;
+	width: fit-content;
+}
+.open-dropdown,.dropdown-option,.dropdown {
+	margin: 2px;
+	display: block;
+}
+.dropdown-option {
+	border: none;
+	border-radius: 3px;
+	font-family: "vazir";
+}
+.dropdown-option-selected {
+	color: white;
+	background: var(--green);
+}
+.left {
+	float: left;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+	.item {
+		width: 50%;
+	}
+	.col:nth-child(2n-1) {
+		width: 70%;
+	}
+	.col:nth-child(2n) {
+		width: 30%;
+	}
+}

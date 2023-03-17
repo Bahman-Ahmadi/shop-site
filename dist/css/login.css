@@ -1,0 +1,70 @@
+.login {
+	margin: auto;
+	background: #fff;
+	width: fit-content;
+}
+.box {
+	padding: 8px;
+	color: #727272;
+	padding-top: 9px;
+	border-radius: 4px;
+	margin-bottom: 4px;
+	padding-bottom: 9px;
+	background: #F5F5F5;
+}
+.input {
+	border: none;
+	outline: none;
+	color: #505050;
+	font-family: "vazir";
+	background: transparent;
+}
+.forgot {
+	font-size: 10px;
+}
+.login-btn {
+	color: #fff;
+	width: 100%;
+	border: none;
+	padding: 8px;
+	font-size: 14px;
+	margin-top: 5px;
+	border-radius: 50px;
+	font-family: "vazir";
+	background: var(--green);
+}
+
+.agree,.register {
+	direction: rtl;
+	font-size: 12px;
+	text-align: center;
+}
+.go {
+	font-weight: bold;
+	color: var(--green);
+}
+
+/*---- Alert ----*/
+.alert {
+	position: absolute;
+	left: 0;right: 0;bottom: 0;top: 0;
+	margin: auto;
+	width: fit-content;
+	height: fit-content;
+}
+.bi-x-circle-fill {
+	color: red;
+}
+.alert-field {
+	width: 90%;
+	border: none;
+	padding: 8px;
+	direction: rtl;
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3px;
+	border-radius: 4px;
+	font-family: "vazir";
+	outline-color: var(--green);
+}

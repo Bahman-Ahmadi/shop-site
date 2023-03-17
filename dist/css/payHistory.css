@@ -1,0 +1,46 @@
+.payments {
+	margin: 25px;
+	direction: rtl;
+}
+.payment {
+	margin-bottom: 9px;
+	display: flex;
+	box-shadow: 0 0 8px #e0e0e0;
+	border-radius: 8px;
+	padding: 5px;
+}
+.block {
+	display: block;
+	margin-right: 8px;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 12px;
+}
+.pay-title {
+	font-weight: bold;
+}
+.pay-date {
+	color: #727272cc;
+}
+.pay-count {
+	margin-right: auto;
+	font-weight: bold;
+	direction: ltr;
+	font-size: 12px;
+}
+.pay-ic {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+.bad {
+	background: #e8a4aa;
+	color: #aa0010;
+}
+.good {
+	background: #a2eabb;
+	color: #007629;
+}
+.in-pay-ic {
+	transform: translate(-17px,14px);
+}

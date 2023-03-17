@@ -1,0 +1,55 @@
+.head {
+	text-align: center;
+	padding: 10px;
+}
+.bi-search {
+	float: right;
+}
+.bi-reply {
+	float: left;
+}
+/*---- TABS ----*/
+.tab-box {
+	width: fit-content;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*---- THUMBNAIL ----*/
+.thumbnail {
+	width: 100%;
+	height: 200px;
+	margin-top: 10px;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*---- CATEGORIES ----*/
+.categories {
+	display: flex;
+	flex-wrap: wrap;
+}
+.cat {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 30%!important;
+}
+.cat-logo {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.alert {
+	position: fixed;
+}
+
+@media only screen and (max-width: 410px) {
+	.tabs {
+		display: block !important;
+		text-align: center !important;
+	}
+}

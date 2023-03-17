@@ -1,0 +1,30 @@
+form {
+	text-align: center;
+	margin: auto;
+}
+.form-name {
+	font-weight: bold;
+}
+.message, input {
+	width: 80%;
+	border: none;
+	resize: none;
+	padding: 8px;
+	direction: rtl;
+	text-align: right;
+	margin-bottom: 5px;
+	border-radius: 8px;
+	font-family: "vazir";
+	outline-color: var(--green);
+}
+.submit {
+	width: 100%;
+	color: white;
+	padding: 7px;
+	border: none;
+	font-weight: bold;
+	border-radius: 8px;
+	font-family: "vazir";
+	background: var(--green);
+	box-shadow: 0 0 8px var(--green);
+}
